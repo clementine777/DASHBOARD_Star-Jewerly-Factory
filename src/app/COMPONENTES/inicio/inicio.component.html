@@ -1,0 +1,40 @@
+<p class="tittle">Product on sale list!</p>
+
+
+<div class="container">
+  <button routerLink="/add" type="button" class="btn btn-dark">ADD PRODUCT</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Product Description</th>
+        <th scope="col">Stock </th>
+        <th scope="col">Weight</th>
+        <th scope="col">Type</th>
+        <th scope="col">Picture</th>
+        <th scope="col">Edit Item</th>
+        <th scope="col">Delete Item</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of ListarProduct">
+        <th>{{product.product_name}} </th>
+        <td>{{product.price}}</td>
+        <td>{{product.product_description}}</td>
+        <td>{{product.stock}}</td>
+        <td>{{product.weight}}</td>
+        <td>{{product.product_type}}</td>
+        <td><img src="{{product.pic}}" alt="Jewelry_pic" width="50" height="auto"> </td>
+        <td>
+          <button (click)="modificar(product.id)" type="button" class="btn btn-success">EDIT</button>
+        </td>
+        <td>
+          <button (click)=" eliminar(product.id)" type="button" class="btn btn-danger">DELETE</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>

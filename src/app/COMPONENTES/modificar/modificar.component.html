@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="col-sm-6">
+    <h1>EDIT EXISTING PRODUCT</h1>
+    <br>
+    <form>
+      <label class="form-label">Product Name </label>
+      <br>
+      <input [(ngModel)]="product.product_name" type="text" class="form-control" name="product_name">
+      <br>
+      <label class="form-label">Price </label>
+      <br>
+      <input [(ngModel)]="product.price" type="text" class="form-control" name=" price">
+      <br>
+      <label class="form-label">Product Description </label>
+      <br>
+      <input [(ngModel)]="product.product_description" type="text" class="form-control" name="product_description">
+      <br>
+      <label class="form-label">Stock</label>
+      <br>
+      <input [(ngModel)]="product.stock" type="text" class="form-control" name="stock">
+      <br>
+      <label class="form-label">Weight</label>
+      <br>
+      <input [(ngModel)]="product.weight" type="text" class="form-control" name="weight">
+      <br>
+      <label class="form-label">material</label>
+      <br>
+      <input [(ngModel)]="product.material" type="text" class="form-control" name="material">
+      <br>
+      <label class="form-label">Product Type</label>
+      <br>
+      <!-- <input [(ngModel)]="product.product_type" type="text" class="form.control" name="product_type"> -->
+      <select [(ngModel)]="product.product_type" name="product_type" id="favoriteOnly">
+        <option value="">Rings</option>
+        <option value="">Bracelets</option>
+        <option value="">Necklace</option>
+        <option value="">Earring</option>
+        <option value="">Accesories</option>
+        <option value="">chains</option>
+      </select>
+      <br>
+      <label class="form-label">pic</label>
+      <br>
+      <input [(ngModel)]="product.pic" type="text" class="form-control" name="pic">
+      <br>
+    </form>
+    <br>
+    <button (click)="modificar()" class="btn btn-primary">SAVE </button>
+    <!-- </div>
+  <div class="col-sm-6">
+    mostrar
+  </div> -->
+  </div>
+</div>
