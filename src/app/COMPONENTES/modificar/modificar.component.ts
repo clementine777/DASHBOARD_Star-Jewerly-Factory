@@ -17,7 +17,7 @@ export class ModificarComponent implements OnInit {
     weight: '',
     material: '',
     product_type: '',
-    pic: '',
+    pics: '',
   };
 
   constructor(

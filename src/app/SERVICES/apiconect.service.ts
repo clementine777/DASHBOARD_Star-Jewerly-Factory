@@ -17,7 +17,8 @@ export class ApiconectService {
   }
   //RUTA POST  addProduct
   addNewProduct(product: product) {
-    return this.http.post(this.url, product);
+    // return this.http.post(this.url, product);
+    return this.http.post(this.url + `/create`, product);
   }
   //RUTA DELETE deleteProduct
   deleteProduct(id: string) {
@@ -38,5 +39,5 @@ export interface product {
   weight?: string;
   material?: string;
   product_type?: string;
-  pic?: string;
+  pics?: string;
 }

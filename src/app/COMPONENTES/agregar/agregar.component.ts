@@ -17,7 +17,7 @@ export class AgregarComponent implements OnInit {
     weight: '',
     material: '',
     product_type: '',
-    pic: '',
+    pics: '',
   };
 
   constructor(
@@ -29,6 +29,7 @@ export class AgregarComponent implements OnInit {
 
   agregar() {
     // delete this.product.id;
+    console.log(this.product);
 
     this.ApiconectService.addNewProduct(this.product).subscribe();
     this.Router.navigate(['/inicio']);
