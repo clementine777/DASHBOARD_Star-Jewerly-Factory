@@ -6,6 +6,23 @@ h1 {
   text-align: center;
   font-size: 1.3em;
 }
+
+form {
+  /* padding-left: 60px; */
+  margin-top: 15px;
+  width: auto;
+}
+
+form input {
+  width: 500px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -15,11 +32,19 @@ h1 {
   /* margin: 1rem; */
 }
 
+#favoriteOnly {
+  margin: 15px;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 35px;
+}
+
 .form-control {
   width: 85%;
 }
 
-.btn-primary {
+.button {
+  width: 150px;
   align-self: center;
-  align-items: center;
+  /* align-items: center; */
 }
